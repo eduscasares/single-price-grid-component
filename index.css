@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --primary-font: 'Karla', sans-serif;
+    --primary-cyan: hsl(179, 62%, 43%);
+    --primary-yellow: hsl(71, 73%, 54%);
+    --neutral-gray: hsl(204, 43%, 93%);
+    --neutral-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: var(--primary-font);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--neutral-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-cyan);
+    margin-top: 0;
+}
+
+h2 {
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+main {
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 60px -10px rgba(152, 166, 189, 0.5);
+}
+
+.upperContent, .bottomContent .priceSection, .bottomContent .whyUs {
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.upperContent {
+    background-color: #fff;
+}
+
+.upperContent p.featured {
+    color: var(--primary-yellow);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.upperContent p {
+    color: var(--neutral-blue);
+    margin: 10px 0;
+    padding-right: 100px;
+    line-height: 26px;
+}
+
+.bottomContent {
+    display: flex;
+    color: var(--neutral-gray);
+}
+
+.bottomContent .priceSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #2BB3B1;
+    width: 50%;
+}
+
+.bottomContent .priceSection .priceContent {
+    display: flex;
+    align-items: center;
+}
+
+.bottomContent .priceSection .priceContent p {
+    margin: 0 0 0 15px;
+    color: var(--neutral-gray);
+    opacity: 0.8;
+}
+
+span.thePrice {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.bottomContent .priceSection p {
+    margin-bottom: 0 0 15px 0;
+}
+
+.bottomContent .priceSection button {
+    background-color: var(--primary-yellow);
+    color: #fff;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 17px;
+    border: 0;
+    border-radius: 7px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.bottomContent .whyUs {
+    background-color: #4ABEBD;
+    width: 50%;
+}
+
+.bottomContent .whyUs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.bottomContent .whyUs ul li {
+    margin: 3px 0;
+}
+
+@media only screen and (max-width: 525px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        max-width: 100%;
+        width: 100%;
+        margin: 50px 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .upperContent p.featured {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .upperContent p {
+        line-height: 30px;
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+    .bottomContent {
+        flex-direction: column;
+    }
+
+    .bottomContent .priceSection {
+        width: 100%;
+    }
+
+    .bottomContent .whyUs {
+        width: 100%;
+    }
+}
